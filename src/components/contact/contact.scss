@@ -1,0 +1,159 @@
+*,
+*::after
+,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contactContainer{
+height: 100vh;
+background-color: rgb(255, 255, 255);
+padding-top: 8vh;
+display: flex;
+
+.contact{
+    flex:1;
+    background-color: white;
+    border-right: 1px solid rgba(0, 0, 0, 0.053);
+    height: 100vh;
+    padding: 10vh;
+    background-color: rgb(255, 255, 255);
+
+    li{
+        text-align: center;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 4.5vh;
+        line-height: 31px;
+        background-color: white;
+        list-style: none;
+        font-weight: 500;
+        
+        //   padding: 1.5vh;
+    }
+    li:nth-of-type(2)
+    {
+        text-align: center;
+        padding-left: 10%;
+        font-size: 2.1vh;
+        font-weight: 500;
+        line-height: 47px;
+        width: 90%;
+        font-family:fangsong;
+        padding-top: 5.5vh;
+    }
+    li:nth-of-type(3)
+    {
+        text-align: center;
+        padding-left: 10%;
+        font-size: 2.1vh;
+        font-weight: 500;
+        line-height: 47px;
+        width: 90%;
+        font-family:fangsong;
+        padding-top: 1.5vh;
+    }
+    li:nth-of-type(4)
+    {
+        text-align: center;
+        padding-left: 10%;
+        font-size: 2.1vh;
+        font-weight: 500;
+        line-height: 47px;
+        width: 90%;
+        font-family:fangsong;
+        padding-top: 1.5vh;
+    }
+    li:nth-of-type(5)
+    {
+        text-align: center;
+        padding-left: 10%;
+        font-size: 2.1vh;
+        font-weight: 500;
+        line-height: 47px;
+        width: 90%;
+        font-family:fangsong;
+        padding-top: 1.5vh;
+    }
+}
+
+.enquiry{
+flex:1;
+.form{
+    height: 100vh;
+    padding: 10vh;
+    background-color: rgb(255, 255, 255);
+li{
+    color: rgb(0, 0, 0);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5vh;
+    line-height: 31px;
+    background-color: white;
+    list-style: none;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 2vh;
+}
+.input{
+    background-color: white;
+    
+    input {
+        background-color: white;
+        font-size: 2vh;
+        padding-left: 12px;
+        font-family: serif;
+height: 5vh;
+width: 100%;
+border: 1px solid rgba(0, 0, 0, 0.251);
+    }
+
+    
+
+}
+
+input:focus{
+    border: 1px solid rgba(99, 44, 44, 0.575);
+        }
+label {
+    background-color: white;
+    font-family:fangsong;
+    font-size: 2.1vh;
+    font-weight: 500;
+    line-height: 31px;
+}
+
+.label{
+    margin-top: 22px;
+    background-color: white;
+}
+
+.inputs{
+    background-color: white;
+    grid-template-columns: 1fr 1fr;
+    input{
+        width: 44%;
+    }
+}
+
+.button{
+    width:20%;
+    height:4.7vh;
+    color:white;
+    text-align: center;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+textarea{
+    background-color: white;
+    height: 9vh;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+}
+}
+}
+
+    
+}

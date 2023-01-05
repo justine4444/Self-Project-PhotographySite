@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Estonia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+* {
+	box-sizing: border-box;
+	.sliderContainer {
+		margin-top: 44px;
+		.slider {
+			position: relative;
+			height: 70vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.slider::before {
+			animation-name: images;
+			animation-duration: 30s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			content: "";
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-size: cover;
+			left: 0px;
+			opacity: 0.55;
+		}
+		@keyframes images {
+			0% {
+				background-image: url(./img1.jpg);
+				object-fit: none;
+        object-position: left top;
+			}
+			25% {
+				background-image: url(./img2.jpg);
+			}
+			50% {
+				background-image: url(./img10.jpg);
+			}
+			75% {
+				background-image: url(./img4.jpg);
+			}
+			100% {
+				background-image: url(./img6.jpg);
+			}
+		}
+		.text {
+			text-align: center;
+			position: relative;
+			margin-top: -2%;
+			width: 100%;
+			background-color: transparent;
+			color: white;
+			font-weight: 700;
+			opacity: 1;
+			font-family: Roboto;
+			font-size: 6vh;
+			line-height: 31px;
+			font-weight: 500;
+		}
+		.text1 {
+			text-align: center;
+			position: relative;
+			width: 100%;
+			font-size: 2vh;
+			background-color: transparent;
+			color: white;
+			margin-top: 6%;
+			opacity: 1;
+			font-family: "Roboto",
+				sans-serif;
+			font-style: italic;
+		}
+		li {
+			list-style: none;
+		}
+		@media (max-width: 768px) {
+			.slider::before {
+				animation-name: images;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				content: "";
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				background-size: cover;
+				background-position: 35%;
+				left: 0px;
+				opacity: 0.75;
+			}
+			.text {
+				text-align: center;
+				position: relative;
+				width: 100%;
+				background-color: transparent;
+				color: white;
+				font-weight: 700;
+				opacity: 1;
+				font-family: Roboto;
+				font-size: 3.5vh;
+				line-height: 31px;
+				font-weight: 500;
+			}
+			.text1 {
+				text-align: center;
+				position: relative;
+				width: 100%;
+				background-color: transparent;
+				color: white;
+				font-size: 2.5vh;
+				font-weight: 500;
+				margin-top: 3%;
+				opacity: 1;
+				font-family: Roboto;
+			}
+			.text2 {
+				text-align: center;
+				margin: 6vh;
+				font-size: 10px;
+				font-family: Roboto;
+				letter-spacing: 2.5vh;
+				word-wrap: break-word;
+				// color: #232429;
+				font-weight: 500;
+			}
+		}
+
+		.specialites {
+			color:black;
+				background-color: white;
+			height: 60vh;
+			.text2 {
+				text-align: center;
+				font-size: 5vh;
+				font-family: "Estonia";
+				letter-spacing: 2.5px;
+				word-wrap: break-word;
+				// color: #232429;
+				font-weight: 500;
+				color:black;
+				background-color: white;
+			}
+			.text3 {
+				text-align: center;
+				width: 90%;
+				margin: 6vh;
+				font-size: 4vh;
+				font-family: "Estonia";
+				// color: #232429;
+				font-weight: 500;
+				text-transform: uppercase;
+				color:black;
+				background-color: white;
+			}
+			.user{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+				color:black;
+				background-color: white;
+			img{
+				height: 24vh;
+				margin-top: 2%;
+				border-radius: 60%;
+				transition: 0.4s;
+			}
+			img:hover{
+				border-radius: 2%;
+			}
+			}
+		}
+	}
+}

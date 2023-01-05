@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+}
+
+.App {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  /* display: flex; */
+}
+.App .imgSlide {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App .slider {
+  margin: 0 auto;
+  overflow: hidden;
+  height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App .slider .slides {
+  display: flex;
+  width: 500%;
+  margin: 0 auto;
+  height: 500px;
+  background-position: center;
+}
+.App .slider .slides input {
+  display: none;
+  margin-left: 20px;
+  background-position: center;
+}
+.App .slider .slides .slide {
+  transition: 2s;
+  display: flex;
+  background-position: center;
+}
+.App .slider .slides .slide img {
+  width: auto;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App .nav-manual {
+  position: absolute;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  margin-top: 42%;
+}
+.App .man-btn {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+.App .man-btn:not(:last-child) {
+  margin-right: 40px;
+  display: flex;
+}
+.App #r1:checked ~ .first {
+  margin-left: 0;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App #r2:checked ~ .first {
+  margin-left: -20%;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App #r3:checked ~ .first {
+  margin-left: -40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App #r4:checked ~ .first {
+  margin-left: -60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.App input:invalid {
+  color: red;
+}
+.App input:invalid:required {
+  border-color: rgb(0, 255, 51);
+}
+.App .Nav {
+  background: black;
+  position: relative;
+  height: 44px;
+}
+.App .Nav ul {
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  color: white;
+  list-style: none;
+  margin: 0 auto;
+}
+.App .Nav ul li {
+  width: 120px;
+  margin: 0 auto;
+  padding: 15px;
+  color: white;
+  background: transparent;
+}
+.App .Nav ul li a {
+  /* text-decoration: none; */
+  color: white;
+  position: relative;
+  float: right;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: small;
+  padding-bottom: 4px;
+  cursor: pointer;
+  border-color: transparent;
+  transition: opacity 400ms;
+}
+.App .Nav ul li a:hover {
+  opacity: 1;
+}
+.App .active {
+  background: rgba(71, 85, 113, 0.4901960784);
+  border-radius: 3px;
+  color: white;
+}
+.App .submenu {
+  display: none;
+}
+.App .Nav ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  border-radius: 3px;
+  color: white;
+  margin: 10px;
+  -webkit-transition: all 400ms;
+}
+.App .Nav ul li .submenu ul li {
+  display: block;
+  width: 120px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 22px;
+  color: rgba(255, 255, 255, 0.331);
+}
+.App .Nav ul li .submenu ul li:hover {
+  display: block;
+  width: 120px;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  -webkit-transition: all 400ms;
+}
+.App .Nav ul li:hover .submenu ul {
+  display: block;
+  margin: 10px;
+  background: #2c2c2c;
+}
+.App .Nav ul li:hover .submenu ul li {
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.331);
+  background: transparent;
+  border-radius: 0%;
+}
+.App .Nav ul li:hover .submenu ul li:last-child {
+  border-bottom: none;
+}/*# sourceMappingURL=App.css.map */

@@ -1,5 +1,8 @@
 import './navigation.scss'
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
+console.log(window.location);
+// replace a by Link and href by to
 export const Navigations=()=>
 {
     const [isActive, setIsActive] = useState("navBar");
@@ -23,24 +26,33 @@ export const Navigations=()=>
 
           </ul>
          <ul className='desktopNav'>
-         <li ><a href="#" className='logo'></a></li>
-          <li><a href="#">Services</a>
-            <div className='submenu'>
-              <ul>
-                <li>Marriage</li>
-                <li>Business</li>
-                <li>Birthday</li>
-                <li>FreeStyle</li>
-              </ul>
-            </div>
-          </li>
-          <li ><a href="#">Home</a></li>
-          <li ><a href="#">Gallery</a></li>
-          <li ><a href="#">About</a></li>
-          <li ><a href="#">Contact</a></li>
+         <li ><Link to="#" className='logo'></Link></li>
+         <CustomLink to="/home"  onClick={handleClick}>Home</CustomLink>
+         <CustomLink to="/portfolio"  onClick={handleClick}>Portfolio</CustomLink>
+         <CustomLink  to="/gallery"  onClick={handleClick} >Gallery</CustomLink>
+         <CustomLink to="/contact"  onClick={handleClick}>Contact</CustomLink>
+         <CustomLink to="/services"  onClick={handleClick}>Pricing </CustomLink>
+        
+          {/* <li ><a href="/home" className='active1'>Home</a></li> */}
+          {/* <li ><a href="/gallery">Gallery</a></li>
+          <li ><a href="/about">About</a></li>
+          <li ><a href="/contact">Contact</a></li>  */}
          </ul>
          </nav>
         </div>
 
  );
+}
+
+// const CustomLink=({href,children,...props})=>
+
+const CustomLink=({to,children,...props})=>
+{
+  const path=window.location.pathname;
+ 
+
+  return(
+    <li  ><Link className={path===to ? "active1" : ""} to={to} {...props}>{children}</Link></li>
+    // <li  ><Link className={path===href ? "active1" : ""} href={href} {...props}>{children}</Link></li>
+  )
 }

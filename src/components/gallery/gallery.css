@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.row {
+  margin-top: 5vh;
+  display: flex;
+  background-color: black;
+}
+.row .column {
+  flex: 25%;
+  max-width: 25%;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row .column img {
+  max-width: 100%;
+  flex-wrap: wrap;
+  padding: 6px;
+  vertical-align: middle;
+}/*# sourceMappingURL=gallery.css.map */

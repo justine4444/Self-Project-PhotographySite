@@ -1,0 +1,45 @@
+*,
+*::after
+,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: block;
+    height:440vh;
+    padding-top:6vh ;
+ 
+    
+.portfolio{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: fit-content;
+    margin: auto;
+    padding-top: 2vh;
+   .col{
+    background-color: rgb(255, 255, 255);
+    li{
+        color: rgb(0, 0, 0);
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 4.5vh;
+        line-height: 31px;
+        background-color: white;
+        list-style: none;
+        font-weight: 500;
+        padding-bottom: 2vh;
+    }
+   img{
+        width: fit-content;
+        padding: 10px;
+        margin: 2px;
+        height: 45vh;
+        background-color: rgba(221, 218, 218, 0.253);
+    }
+}
+  }
+
+}

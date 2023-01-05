@@ -1,12 +1,14 @@
 *,
-*::after,
+*::after
+,
 *::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .navBar {
-	background-color: black;
+	
 	height: 44px;
 	margin: 0;
 	position: fixed;
@@ -14,7 +16,7 @@
 	left: 0;
 	top: 0;
 	right: 0;
-
+transition: 2s;
 	nav {
 		width: 1000px;
 		margin: 0
@@ -29,6 +31,22 @@
 			list-style: none;
 			align-items: center;
 			height: 100%;
+			 li{
+				display: flex;
+			}
+		}
+		.submenu{
+			display: block;
+			background-color: transparent;
+
+			ul {
+				display: inline-block;
+				list-style: none;
+				background-color: transparent;
+				padding-top: 10%;
+				margin-top:12%;
+				
+			}
 		}
 		.mobileNav {
 			display: none;
@@ -80,7 +98,7 @@
 			overflow: hidden;
 			z-index: -1;
 			transition: all
-				700ms
+				1000ms
 				ease;
 		}
 	}
@@ -200,4 +218,11 @@
 .navBar.active,
 .menuContainer.active {
 	background-color: black;
+}
+
+nav ul li .active1 {
+	text-decoration: underline;
+	text-underline-position: below;
+	color: white;
+	opacity: 1;
 }

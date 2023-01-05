@@ -1,0 +1,51 @@
+
+*{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.row{
+    margin-top: 5vh;
+    display: flex;
+    background-color: black;
+   
+ 
+  .column{
+        flex:25%;
+        max-width: 25%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        img{
+            max-width: 100%;
+            flex-wrap: wrap;
+            padding: 6px;
+            vertical-align: middle;
+            animation: anim 2s linear infinite;
+        }
+        // @keyframes anim {
+        //  0%{ scale: 20%;}
+        //  25%{ opacity: 25%;}
+        //  50%{ opacity: 50%;}
+        //  75%{ rotate: 100deg;}
+        //  100%{ rotate: 0deg;}
+        // }
+    }
+
+   
+    
+    @media only screen and  (max-width: 700px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+          img{
+            max-width: 100%;
+            flex-wrap: wrap;
+            padding: 6px;
+            vertical-align: middle;
+        }
+        }
+      }
+
+
+    }
+

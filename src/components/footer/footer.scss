@@ -1,0 +1,138 @@
+.footer{
+    box-sizing: border-box;
+height: 30vh;
+color: white;
+display: inline-flex;
+width: 100%;
+text-align: center;
+.logo {
+ width: 25%;
+ margin:2rem auto 1rem 2rem ;
+ text-align: left;
+ font-family: 'Cormorant Garamond', serif;
+ font-weight: 500;
+ font-size: 1.7em;
+//  background-color: rgb(51, 87, 119);
+ letter-spacing: 4px;
+ .text3{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: .7em;
+    margin-left: 4rem;
+    
+ }
+ .text4{
+    font-size: .5em;
+    padding-top: 1rem;
+    opacity: .7;
+    font-weight: 100;
+    letter-spacing: 2px;
+    
+}
+p{
+    font-size: .5em;
+    padding-top: 1rem;
+    opacity:1.7;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+}
+.explore{
+width: 10%;
+height: 70%;
+text-align: left;
+font-weight: 500;
+display: block;
+margin:2rem auto 1rem 2rem ;
+// background-color: rgb(51, 87, 119);
+div{
+    margin-top: 0.6rem;
+li{
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: left;
+    transition:  ease-in-out .1s;
+    cursor: pointer;
+    list-style: none;
+    font-size: 12px;
+    opacity: .7;
+    padding-top: 3%;
+    margin-top: 0.6rem;
+}
+li:hover{
+    opacity: 1;
+    font-weight: 500;
+}
+}
+
+}
+.visit{
+    width:25%;
+    height: 70%;
+    text-align: left;
+    font-weight: 500;
+    display: block;
+    margin:2rem auto 1rem 2rem ;
+    .text4{
+        font-size: 12px;
+        opacity: .7;
+        padding-top: 3%;
+        margin-top: 0.6rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    .visit1{
+        margin-top: 0.7rem;
+    }
+}
+.follow{
+    width:10%;
+    text-align: left;
+    margin:2rem auto 1rem 2rem ;
+// background-color: rgb(51, 87, 119);
+.text4{
+    font-size: 12px;
+    opacity: .7;
+    padding-top: 3%;
+    margin-top: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: left;
+    transition:  ease-in-out .1s;
+}
+.text4:hover{
+    opacity: 1;
+    cursor: pointer;
+    font-weight: 500;
+}
+}
+.legal{
+    width: 10%;
+    text-align: left;
+    margin:2rem auto 1rem 2rem ;
+// background-color: rgb(51, 87, 119);
+.text4{
+    font-size: 12px;
+    opacity: .7;
+    padding-top: 3%;
+    margin-top: 0.6rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: left;
+    transition:  ease-in-out .1s;
+}
+.text4:hover{
+    opacity: 1;
+    font-weight: 500;
+}
+}
+}
+.footer1{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-width: 70%;
+    border-top: 0.4px solid rgba(255, 255, 255, 0.137);
+font-weight: 200;
+}
